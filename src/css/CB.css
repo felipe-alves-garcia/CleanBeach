@@ -1,0 +1,60 @@
+/*Nav2*/
+#selecionadoCB{
+    width:11%;
+    position: absolute;
+    z-index: 999;
+    left:10%;
+    top:81%;
+    border: white 0.6vw solid;
+    opacity: 1;
+    margin: 0;
+    border-radius: 5vw;
+    transform: rotate(-5.31deg);
+}
+/*Textos*/
+#bgTitulo{
+    background-color:#2471e5;
+    border-top-right-radius: 15vw;
+    border-bottom-right-radius: 15vw;
+    border: white 3px solid;
+    border-left: none;
+    display: inline;
+    padding-bottom: 1rem;
+    padding-top: 1.35rem;
+}
+#titulo{
+    font-size:1.75rem;
+    color: white;
+    font-family: K2D;
+    font-weight: 100;
+    display: inline;
+}
+/*#hrTitulo{
+    border:1px solid white;
+    opacity: 1;
+    width: 100%;
+    margin:0;
+    margin-top: 0.5rem;
+}*/
+#texto{
+    font-family: Inter;
+    font-size: 1.25rem;
+    color:white;
+    text-align:justify;
+}
+/*PDF*/
+#pdf{
+    transition: 400ms ease-in-out;
+}
+#pdf > p{
+    font-size: 1.25rem;
+    color:#2471e5;
+    font-family: K2D;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+#pdf:hover{
+    cursor:pointer;
+    background-color: rgb(223, 223, 223);
+}

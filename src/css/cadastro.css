@@ -1,0 +1,96 @@
+#voltar{
+    width:4rem;
+    height:4rem;
+    background-color: white;
+    border-radius: 50%;
+    margin: 1rem;
+    position: absolute;
+    transition: 400ms;
+    opacity: 0.5;
+    top:0;
+    left:0;
+    z-index: 999;
+}
+#voltar > img{
+    width:2rem;
+    margin:1rem;
+}
+#voltar:hover{
+    opacity: 1;
+}
+/**/
+#divCadastro{
+    min-height: 100vh;
+}
+#tituloCadastro{
+    font-family: K2D;
+    font-size:1.75rem;
+    color:white;
+    text-align: center;
+    border:0.2vw white solid;
+    border-radius: 15vw;
+}
+#cadastroH3{
+    color:white;
+    font-family: K2D;
+    font-size: 1.1rem;
+    margin:0;
+    margin-left: 1.5rem;
+    font-weight: 100;
+}
+#cadastroEntrada{
+    display:flex;
+}
+#cadastroSimbolo{
+    width:15%;
+    background-color: white;
+    border-bottom-left-radius:5vw;
+    border-top-left-radius: 5vw;
+    display:flex;
+}
+#cadastroSimbolo > img{
+    width:2rem;
+    margin:auto;
+}
+#cadastroEntrada > h3{
+    color:white;
+    font-family: K2D;
+    font-size: 1.1rem;
+    margin:0;
+    margin-left: 1.5rem;
+    font-weight: 100;
+}
+#cadastroInput{
+    width:85%;
+    background-color: rgba(255, 255, 255, 80%);
+    border:none;
+    border-bottom-right-radius: 5vw;
+    border-top-right-radius: 5vw;
+    outline: none;
+    color:black;
+    font-size: 1rem;
+    font-family: Inter;
+    padding-left:1rem;
+    padding-right:1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;    
+}
+#botaoCadastro{
+    width:20rem;
+    color:#2494E5;
+    border-radius: 10vw;
+    display: block;
+    text-decoration: none;
+    transition: 200ms;
+    margin:auto;
+    margin-top: 3rem;
+    font-size: 1.75rem;
+    font-family: K2D;
+    background-color:white;
+    border:none;
+    font-weight: bold;
+}
+#botaoCadastro:hover{
+    transition: 200ms;
+    opacity:0.7;
+}

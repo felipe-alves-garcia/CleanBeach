@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/divertFish.css">
+        <title>Divert Fish</title>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+
+            <canvas id="tela">
+
+            </canvas>
+            <canvas id="joyStick">
+                
+            </canvas>
+            <div id="poderes">
+                <div id="bolhaProtecao">
+                    <img src="imgDivertFish/bolha.png" alt="">
+                </div>
+                <div id="bolhaAtaque">
+                    <img src="imgDivertFish/bolhaAtaque.png" alt="">
+                </div>
+            </div>
+            <audio src="./audio/aiDoeu.mp3" id="audioDoeu"></audio>
+            <audio src="./audio/dano.mp3" id="dano"></audio>
+            <audio src="./audio/musica1.mp3" id="musica1" loop></audio>
+            <audio src="./audio/superPowerUp.mp3" id="superPowerUp"></audio>
+            <audio src="./audio/powerUp.mp3" id="powerUp"></audio>
+            <audio src="./audio/abertura.mp3" id="musicaAbertura" loop></audio>
+            <audio src="./audio/coin.mp3" id="moeda"></audio>
+            <audio src="./audio/gameOver.mp3" id="gameOver"></audio>
+            <audio src="./audio/coin2.mp3" id="moeda2"></audio>
+            <div id="botaoComecar">
+                <p>Jogar</p>
+            </div>
+
+            <div id="menu">
+                <div class="linha">
+                    <div class="bgOpcao diferencaOpcao">
+                        <img src="imgDivertFish/bolha.png" alt="">
+                        <div id="placarBotao" class="opcao"><img src="imgDivertFish/placar.png" alt=""></div>
+                    </div>
+                    <div class="bgOpcaoPrincipal">
+                        <img src="imgDivertFish/bolha.png" alt="">
+                        <div id="jogar" class="opcaoPrincipal"><img src="imgDivertFish/jogar.png" alt=""></div>
+                    </div>
+                    <div class="bgOpcao diferencaOpcao">
+                        <img src="imgDivertFish/bolha.png" alt="">
+                        <div id="lojaBotao" class="opcao"><img src="imgDivertFish/loja.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="bgOpcao">
+                        <img src="imgDivertFish/bolha.png" alt="">
+                        <a href="https://cleanbeach.vercel.app/" class="opcao"><img src="imgDivertFish/site.png" alt=""></a>
+                    </div>
+                    <div class="bgOpcao">
+                        <img src="imgDivertFish/bolha.png" alt="">
+                        <div id="teclas" class="opcao"><img src="imgDivertFish/outroJogo.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="placar">
+                <img src="imgDivertFish/voltar.png" alt="" id="placarVoltar">
+                <h2>Placar de Líderes</h2>
+                <div id="scroll">
+                    <table id="tabela">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Nome</th>
+                                <th>Pontos</th>
+                                <th>Moedas</th>
+                            </tr>    
+                        </thead>
+                        <!--<tbody id="placarBody">
+                            <tr>
+                                <td>1</td>
+                                <td>Felipe</td>
+                                <td>3097</td>
+                                <td>41</td>
+                            </tr>     
+                        </tbody>-->
+                        
+                    </table>    
+                </div>
+                
+            </div>
+
+            <img src="imgDivertFish/teclas.png" alt="" id="teclasImg">
+
+            <div id="loja">
+                <img src="imgDivertFish/voltar.png" alt="" id="voltarLoja">
+                <h2>Loja</h2>
+                <div id="itens">
+                    <!--<div class="item equipado">
+                        <h3>Peixe Palhaço</h3>
+                        <img src="imgDivertFish/testePeixe.png" alt="">
+                        <div class="statusComprado">
+                            <h4>Equipado</h4>
+                        </div>
+                    </div>
+                    <div class="item equipar">
+                        <h3>Peixe Palhaço</h3>
+                        <img src="imgDivertFish/testePeixe.png" alt="">
+                        <div class="statusComprado">
+                            <h4>Equipar</h4>
+                        </div>
+                    </div>
+                    <div class="item comprar">
+                        <h3>Peixe Palhaço</h3>
+                        <img src="imgDivertFish/testePeixe.png" alt="">
+                        <div class="statusComprar peixeItem">
+                            <h4 class="botaoComprar">Comprar</h4>
+                            <div>
+                                <img src="imgDivertFish/moedaTeste.png" alt="">
+                                <h4>35</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item comprar">
+                        <h3>Peixe Palhaço</h3>
+                        <img src="imgDivertFish/testePeixe.png" alt="">
+                        <div class="statusComprar peixeItem">
+                            <h4 class="botaoComprar">Comprar</h4>
+                            <div>
+                                <img src="imgDivertFish/moedaTeste.png" alt="">
+                                <h4>50</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item comprar">
+                        <h3>Bolha de ataque</h3>
+                        <img src="imgDivertFish/bolha.png" alt="">
+                        <div class="statusComprar bolhaItem">
+                            <h4 class="botaoComprar">Comprar</h4>
+                            <div>
+                                <img src="imgDivertFish/moedaTeste.png" alt="">
+                                <h4>3</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item comprar">
+                        <h3>Bolha de proteção</h3>
+                        <img src="imgDivertFish/bolha.png" alt="">
+                        <div class="statusComprar bolhaItem">
+                            <h4 class="botaoComprar">Comprar</h4>
+                            <div>
+                                <img src="imgDivertFish/moedaTeste.png" alt="">
+                                <h4>5</h4>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+
+            <div id="pergunta">
+                <h2 id="resposta">Qual lixeira é a correta para colocar o lixo abaixo?</h2>
+                <div id="lixoPergunta"><img src="imgDivertFish/lixosConjunto.png" alt="" id="lixoPerguntaImg"></div>
+                <div id="alternativas">
+                    <div class="bgAlternativa" id="alterA">
+                        <img src="imgDivertFish/bolha.png" alt="">
+                        <div class="alternativa"><img src="imgDivertFish/lixeiras.png" alt="" style="transform: translateX(calc(0 * -7vw));"></div>
+                    </div>
+                    <div class="bgAlternativa" id="alterB" style="margin-top: 6vw;">
+                        <img src="imgDivertFish/bolha.png" alt="">
+                        <div class="alternativa"><img src="imgDivertFish/lixeiras.png" alt="" style="transform: translateX(calc(1 * -7vw));"></div>
+                    </div>
+                    <div class="bgAlternativa" id="alterC" style="margin-top: 8vw;">
+                        <img src="imgDivertFish/bolha.png" alt="">
+                        <div class="alternativa"><img src="imgDivertFish/lixeiras.png" alt="" style="transform: translateX(calc(2 * -7vw));"></div>
+                    </div>
+                    <div class="bgAlternativa" id="alterD" style="margin-top: 6vw;">
+                        <img src="imgDivertFish/bolha.png" alt="">
+                        <div class="alternativa"><img src="imgDivertFish/lixeiras.png" alt="" style="transform: translateX(calc(3 * -7vw));"></div>
+                    </div>
+                    <div class="bgAlternativa" id="alterE">
+                        <img src="imgDivertFish/bolha.png" alt="">
+                        <div class="alternativa"><img src="imgDivertFish/lixeiras.png" alt="" style="transform: translateX(calc(4 * -7vw));"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gameoverResult">
+                <div id="resultado">
+                    <h2>RESULTADOS</h2>
+                    <h3 id="lixeiraCorreta">Descarte do Lixo: Correto (+ 0 pontos)</h3>
+                    <h3 id="pontosResult">Pontuação: 0</h3>
+                    <h3 id="pontosTotalResult">Pontuação Total: 0</h3>
+                    <h3 id="moedasResult">Moedas Pegas: 0</h3>
+                    <div id="reJogar">
+                        <p id="jogarNovamente">Jogar</p>
+                        <p id="voltarHome">Voltar</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="./js/divertFish.js"></script>
+</html>

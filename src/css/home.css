@@ -1,0 +1,171 @@
+/*Nav2*/
+#selecionadoHome{
+    width:11%;
+    position: absolute;
+    z-index: 999;
+    left:44.5%;
+    top:71%;
+    border: white 0.6vw solid;
+    opacity: 1;
+    border-radius: 5vw;
+    margin: 0;
+}
+/*Curiosidade*/
+#curiosidadeH2{
+    text-align: center;
+    font-size:3rem;
+    color:white;
+    font-family:K2D;
+    font-weight: 100;
+}
+#tar{
+    border-radius:1vw;
+}
+#tarfonte{
+    text-decoration: none;
+    display:none;
+    position: absolute;
+    bottom: 5%;
+}
+#tarfonte > p{
+    font-size: 0.75rem;
+    font-family: Inter;
+    font-weight: 350;
+    color:white;
+    padding: 0;
+    margin: 0;
+}
+#tarfonte > p:hover{
+    color:#acd6f4;
+}
+/*Login e Cadastro*/
+#loginCadastro{
+    border-radius: 30px;
+    border:2px #fff solid;
+    overflow: hidden;
+    animation:logcad 7s linear infinite;
+}
+#login{
+    color:#0038FF;
+    font-family:K2D;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    background-color: white;
+}
+#cadastro{
+    color:#fff;
+    font-family:K2D;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    background-image:linear-gradient(-225deg, rgb(0, 67, 202), rgb(0, 102, 175));
+}
+
+#tcc{
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-top-left-radius: 60px;
+}
+#tcc > p{
+    font-size: 1.1rem;
+}
+.conhecer{
+    background-image:linear-gradient(-45deg, rgb(0, 64, 192), rgb(0, 111, 190));
+}
+/*jogo*/
+.jogo{
+    border-radius: 2vw;
+}
+#jogarDF{
+    position: absolute;
+    bottom: 10%;
+    left: calc(43% - 20px);
+    font-size: 1rem;
+    padding: 1%;
+    padding-left: 7%;
+    padding-right: 7%;
+
+}
+/*Botão Jogar*/
+.jogar{
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    border: 2px white solid;
+    border-radius: 10vw;
+    padding-top: 0.5vw;
+    padding-bottom:0.5vw;
+    padding-left:7vw;
+    padding-right:7vw;
+    font-size: 3vw;
+    font-weight: bold;
+    transition: 600ms ease-in-out;
+}
+.jogar:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.8;
+    color:white
+}
+/*Área Jogos*/
+#jogos{
+    position:relative;
+    background-color: #F9DF9C;
+}
+/*Elementos Gráficos*/
+#ave{
+    width:3vw;
+    z-index:998;
+    position:absolute;
+    animation: ave 1.2s ease-in-out infinite;
+}
+#coqueiro{
+    height:33vw;
+    z-index:998;
+    position:absolute;
+    top:calc(7% - 33vw);
+}
+#coco{
+    width:4.5vw;
+    height:auto;
+    transform: rotate(-28.17deg);
+    position:absolute;
+    left:12%;
+    top:3%;
+}
+#concha1{
+    width:2vw;
+    height:auto;
+    transform: rotate(28.17deg);
+    position:absolute;
+    left:3%;
+    top:8%;
+}
+#concha2{
+    width:3vw;
+    height:auto;
+    transform: rotate(-160deg);
+    position:absolute;
+    right:3%;
+    top:6%;
+}
+#concha3{
+    width:4vw;
+    height:auto;
+    transform: rotate(-240deg);
+    position:absolute;
+    left:40%;
+    bottom:3%;
+}
+#caranguejo{
+    width:6.7vw;
+    position:absolute;
+    top:0%;
+    right:11%;
+}
+#bola{
+    width:6vw;
+    position:absolute;
+    bottom:3%;
+    right:3%;
+    animation: bola 10s ease-in-out infinite;
+}

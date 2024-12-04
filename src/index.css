@@ -1,0 +1,581 @@
+/*--------------GERAL------------------*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face{
+  font-family:Inter;
+  src: url("./font/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+@font-face{
+  font-family:Kaushan;
+  src: url("./font/Kaushan_Script/KaushanScript-Regular.ttf");
+}
+@font-face{
+  font-family:K2D;
+  src: url("./font/K2D/K2D-Medium.ttf");
+}
+.zi999{
+  z-index: 999;
+}
+.a{
+  text-decoration: none;
+  color:black;
+  transition: 200ms ease-in-out;
+}
+.hover1:hover{
+  transition: 200ms ease-in-out;
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(0.99);
+  color:black;
+}
+.bg1{
+  background-color: white;
+}
+.bg2{
+  background-color: #0038FF;
+}
+.bg3{
+  background-color: #F9DF9C;
+}
+.bg4{
+  background-color: #2494E5;
+}
+.font1{
+  font-family:K2D;
+}
+.font2{
+  font-family:Inter;
+}
+.raio{
+  border-radius: 60px;
+}
+.text-justify{
+  text-align: justify;
+}
+.body{
+  width:100%;
+  height:auto;
+  background-color: #2494E5;
+  overflow-x: hidden;
+}
+
+/*--------------Header------------------*/
+
+header{
+  background-color: #F9DF9C;
+  position: relative;
+  z-index: 999;
+}
+#cleanBeach{
+  font-family:Kaushan;
+  text-decoration: none;
+  animation:titulo 600ms ease-out;
+  font-size: 1.75rem;
+  transition: 200ms ease-in-out;
+
+}
+#imgHeader{
+  margin-right: 1.5rem;
+  width:5.5rem;
+  animation: headerimg 600ms ease-out;
+}
+
+/*--------------Nav------------------*/
+
+nav{
+  margin: 0 auto;
+  position:relative;
+  animation: anav 1s ease-out;
+  z-index: 500;
+  font-size:1.25rem;
+}
+#anavSec{
+  font-family: K2D;
+  color:white;
+  margin: 0;    
+  font-size: 1.25rem;
+}
+#anavPri{
+  padding-right:1.25rem;
+  padding-left:1.25rem;
+  padding-top:0.25rem;
+  padding-bottom: 0.15rem;
+  font-family: K2D;
+  color:#238DDA;
+  font-weight: bold;
+  background-color: white;
+  border-top-right-radius:20px;
+  border-top-left-radius:20px;
+  margin: 0;
+}
+.hrNav{
+  position:absolute;
+  width:100%;
+  bottom:0;
+  border:1px white solid;
+  margin: 0;
+  opacity: 1.0;
+  border-radius:5px
+}
+
+/**/
+.aNav2{
+  opacity: 0.6;
+}
+#nav2{
+  position:fixed;
+  bottom: 0;
+  width:100%;
+  height: 20vw;
+  z-index: 999;
+}
+#fho{
+  position: absolute;
+  z-index: 999;
+  width:9%;
+  left:45.5%;
+  top:8%;
+}
+#fjo{
+  position: absolute;
+  z-index: 999;
+  width:9%;
+  right:28%;
+  top:16%;
+}
+#fco{
+  position: absolute;
+  z-index: 999;
+  width:8%;
+  left:29%;
+  top:19%;
+}
+#fcb{
+  position: absolute;
+  z-index: 999;
+  width:8%;
+  left:11.5%;
+  top:31%;
+}
+#fli{
+  position: absolute;
+  z-index: 999;
+  width:8%;
+  right:11.5%;
+  top:31%;
+}
+#eli2{
+  position:absolute;
+  width:100%;
+  bottom: 0;
+  z-index: 998;
+}
+#eli1{
+  position:absolute;
+  width:100%;
+  bottom:0;
+  z-index: 997;
+}  
+
+/*-------------Animações---------------*/
+
+@keyframes titulo {
+  from{
+      margin-top:-30vw;
+  }
+  to{
+      margin-top: 0;
+  }
+}
+@keyframes headerimg{
+  from{
+      margin-right:-35rem;
+  }
+  to{
+      margin-right:1.5rem;
+  }
+}
+@keyframes anav{
+  from{
+      margin-top:-20vw;
+      margin-bottom:20vw;
+  }
+  to{
+      margin-top:0vw;
+      margin-bottom:0;
+  }
+}
+@keyframes logcad{
+  0%{
+      transform:scale(1.0);
+  }
+  40%{
+      transform:scale(1.1);
+  }
+  60%{
+      transform:scale(1.1);
+  }
+  100%{
+      transform:scale(1.0);
+  }
+}
+@keyframes ave{
+  0%{
+      top:-66%;
+      left:10%;
+  }
+  50%{
+      top:-67.5%;
+      left:11%;
+  }
+  100%{
+      top:-66%;
+      left:10%;
+  }
+}
+@keyframes bola{
+  0%{
+      bottom:3%;
+      right:3%;
+      transform: rotate(-180deg) scale(1);
+  }
+  25%{
+      bottom:3%;
+      right:-13%;
+      transform: rotate(0deg) scale(1);
+  }
+  26%{
+      bottom:3%;
+      left:-7%;
+      transform: rotate(0deg) scale(0.7);
+  }
+  50%{
+      bottom:3%;
+      left:3%;
+      transform: rotate(180deg) scale(0.7);
+  }
+  75%{
+      bottom:3%;
+      left:-7%;
+      transform: rotate(0deg) scale(0.7);
+  }
+  76%{
+      bottom:3%;
+      right:-13%;
+      transform: rotate(0deg) scale(1);
+  }
+  100%{
+      bottom:3%;
+      right:3%;
+      transform: rotate(-180deg) scale(1);
+  }
+}
+@media only screen and (max-width: 992px){
+  @keyframes ave{
+      0%{
+          top:-11%;
+          left:89%;
+      }
+      50%{
+          top:-12.5%;
+          left:90%;
+      }
+      100%{
+          top:-11%;
+          left:89%;
+      }
+  }
+}/*--------------GERAL------------------*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face{
+  font-family:Inter;
+  src: url("font/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+@font-face{
+  font-family:Kaushan;
+  src: url("font/Kaushan_Script/KaushanScript-Regular.ttf");
+}
+@font-face{
+  font-family:K2D;
+  src: url("font/K2D/K2D-Medium.ttf");
+}
+.zi999{
+  z-index: 999;
+}
+.a{
+  text-decoration: none;
+  color:black;
+  transition: 200ms ease-in-out;
+}
+.hover1:hover{
+  transition: 200ms ease-in-out;
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(0.99);
+  color:black;
+}
+.bg1{
+  background-color: white;
+}
+.bg2{
+  background-color: #0038FF;
+}
+.bg3{
+  background-color: #F9DF9C;
+}
+.bg4{
+  background-color: #2494E5;
+}
+.font1{
+  font-family:K2D;
+}
+.font2{
+  font-family:Inter;
+}
+.raio{
+  border-radius: 60px;
+}
+.text-justify{
+  text-align: justify;
+}
+.body{
+  width:100%;
+  height:auto;
+  background-color: #2494E5;
+  overflow-x: hidden;
+}
+
+/*--------------Header------------------*/
+
+header{
+  background-color: #F9DF9C;
+  position: relative;
+  z-index: 999;
+}
+#cleanBeach{
+  font-family:Kaushan;
+  text-decoration: none;
+  animation:titulo 600ms ease-out;
+  font-size: 1.75rem;
+  transition: 200ms ease-in-out;
+
+}
+#imgHeader{
+  margin-right: 1.5rem;
+  width:5.5rem;
+  animation: headerimg 600ms ease-out;
+}
+
+/*--------------Nav------------------*/
+
+nav{
+  margin: 0 auto;
+  position:relative;
+  animation: anav 1s ease-out;
+  z-index: 500;
+}
+#anavSec{
+  font-family: K2D;
+  color:white;
+  margin: 0;    
+}
+#anavPri{
+  padding-right:1.25rem;
+  padding-left:1.25rem;
+  padding-top:0.25rem;
+  padding-bottom: 0.15rem;
+  font-family: K2D;
+  color:#238DDA;
+  font-weight: bold;
+  background-color: white;
+  border-top-right-radius:20px;
+  border-top-left-radius:20px;
+  margin: 0;
+}
+.hrNav{
+  position:absolute;
+  width:100%;
+  bottom:0;
+  border:1px white solid;
+  margin: 0;
+  opacity: 1.0;
+  border-radius:5px
+}
+
+/**/
+.aNav2{
+  opacity: 0.6;
+}
+#nav2{
+  position:fixed;
+  bottom: 0;
+  width:100%;
+  height: 20vw;
+  z-index: 999;
+}
+#fho{
+  position: absolute;
+  z-index: 999;
+  width:9%;
+  left:45.5%;
+  top:8%;
+}
+#fjo{
+  position: absolute;
+  z-index: 999;
+  width:9%;
+  right:28%;
+  top:16%;
+}
+#fco{
+  position: absolute;
+  z-index: 999;
+  width:8%;
+  left:29%;
+  top:19%;
+}
+#fcb{
+  position: absolute;
+  z-index: 999;
+  width:8%;
+  left:11.5%;
+  top:31%;
+}
+#fli{
+  position: absolute;
+  z-index: 999;
+  width:8%;
+  right:11.5%;
+  top:31%;
+}
+#eli2{
+  position:absolute;
+  width:100%;
+  bottom: 0;
+  z-index: 998;
+}
+#eli1{
+  position:absolute;
+  width:100%;
+  bottom:0;
+  z-index: 997;
+}  
+
+/*-------------Animações---------------*/
+
+@keyframes titulo {
+  from{
+      margin-top:-30vw;
+  }
+  to{
+      margin-top: 0;
+  }
+}
+@keyframes headerimg{
+  from{
+      margin-right:-35rem;
+  }
+  to{
+      margin-right:1.5rem;
+  }
+}
+@keyframes anav{
+  from{
+      margin-top:-20vw;
+      margin-bottom:20vw;
+  }
+  to{
+      margin-top:0vw;
+      margin-bottom:0;
+  }
+}
+@keyframes logcad{
+  0%{
+      transform:scale(1.0);
+  }
+  40%{
+      transform:scale(1.1);
+  }
+  60%{
+      transform:scale(1.1);
+  }
+  100%{
+      transform:scale(1.0);
+  }
+}
+@keyframes ave{
+  0%{
+      top:-66%;
+      left:10%;
+  }
+  50%{
+      top:-67.5%;
+      left:11%;
+  }
+  100%{
+      top:-66%;
+      left:10%;
+  }
+}
+@keyframes bola{
+  0%{
+      bottom:3%;
+      right:3%;
+      transform: rotate(-180deg) scale(1);
+  }
+  25%{
+      bottom:3%;
+      right:-13%;
+      transform: rotate(0deg) scale(1);
+  }
+  26%{
+      bottom:3%;
+      left:-7%;
+      transform: rotate(0deg) scale(0.7);
+  }
+  50%{
+      bottom:3%;
+      left:3%;
+      transform: rotate(180deg) scale(0.7);
+  }
+  75%{
+      bottom:3%;
+      left:-7%;
+      transform: rotate(0deg) scale(0.7);
+  }
+  76%{
+      bottom:3%;
+      right:-13%;
+      transform: rotate(0deg) scale(1);
+  }
+  100%{
+      bottom:3%;
+      right:3%;
+      transform: rotate(-180deg) scale(1);
+  }
+}
+@media only screen and (max-width: 992px){
+  @keyframes ave{
+      0%{
+          top:-11%;
+          left:89%;
+      }
+      50%{
+          top:-12.5%;
+          left:90%;
+      }
+      100%{
+          top:-11%;
+          left:89%;
+      }
+  }
+}
